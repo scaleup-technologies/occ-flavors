@@ -305,6 +305,7 @@ mandatory:
     ram: 8192
     disk: 20
     scs:cpu-type: shared-core
+    scs:disk0-type: ssd
     scs:name-v1: SCS-4V:8:20
     scs:name-v2: SCS-4V-8-20
     hw_rng:allowed: "True"
