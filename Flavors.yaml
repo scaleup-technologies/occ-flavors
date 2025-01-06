@@ -310,3 +310,225 @@ mandatory:
     scs:name-v2: SCS-4V-8-20
     hw_rng:allowed: "True"
     aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-1V-4-40p
+    cpus: 1
+    ram: 4096
+    disk: 40
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-1V:4:40
+    scs:name-v2: SCS-1V-4-40
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-1V-4-80p
+    cpus: 1
+    ram: 4096
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-1V:4:80
+    scs:name-v2: SCS-1V-4-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-1V-8-40p
+    cpus: 1
+    ram: 8192
+    disk: 40
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-1V:8:40
+    scs:name-v2: SCS-1V-8-40
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-1V-8-80p
+    cpus: 1
+    ram: 8192
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-1V:8:80
+    scs:name-v2: SCS-1V-8-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-2V-4-40p
+    cpus: 2
+    ram: 4096
+    disk: 40
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-2V:4:40
+    scs:name-v2: SCS-2V-4-40
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-2V-4-80p
+    cpus: 2
+    ram: 4096
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-2V:4:80
+    scs:name-v2: SCS-2V-4-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-2V-8-40p
+    cpus: 2
+    ram: 8192
+    disk: 40
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-2V:8:40
+    scs:name-v2: SCS-2V-8-40
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-2V-8-80p
+    cpus: 2
+    ram: 8192
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-2V:8:80
+    scs:name-v2: SCS-2V-8-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-2V-16-40p
+    cpus: 2
+    ram: 16384
+    disk: 40
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-2V:16:40
+    scs:name-v2: SCS-2V-16-40
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-2V-16-80p
+    cpus: 2
+    ram: 16384
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-2V:16:80
+    scs:name-v2: SCS-2V-16-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+
+  - name: SCS-4V-8-80p
+    cpus: 4
+    ram: 8192
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-4V:8:80
+    scs:name-v2: SCS-4V-8-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-4V-8-160p
+    cpus: 4
+    ram: 8192
+    disk: 160
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-4V:8:160
+    scs:name-v2: SCS-4V-8-160
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+
+  - name: SCS-4V-16-80p
+    cpus: 4
+    ram: 16384
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-4V:16:80
+    scs:name-v2: SCS-4V-16-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-4V-16-160p
+    cpus: 4
+    ram: 16384
+    disk: 160
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-4V:16:160
+    scs:name-v2: SCS-4V-16-160
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-4V-32-80p
+    cpus: 4
+    ram: 32768
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-4V:32:80
+    scs:name-v2: SCS-4V-32-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-4V-32-160p
+    cpus: 4
+    ram: 32768
+    disk: 160
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-4V:32:160
+    scs:name-v2: SCS-4V-32-160
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-8V-16-80p
+    cpus: 8
+    ram: 16384
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-8V:16:80
+    scs:name-v2: SCS-8V-16-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-8V-16-160p
+    cpus: 8
+    ram: 16384
+    disk: 160
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-8V:16:160
+    scs:name-v2: SCS-8V-16-160
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-8V-32-80p
+    cpus: 8
+    ram: 32768
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-8V:32:80
+    scs:name-v2: SCS-8V-32-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-8V-32-160p
+    cpus: 8
+    ram: 32768
+    disk: 160
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-8V:32:160
+    scs:name-v2: SCS-8V-32-160
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-16V-32-80p
+    cpus: 16
+    ram: 32768
+    disk: 80
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-16V:32:80
+    scs:name-v2: SCS-16V-32-80
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
+  - name: SCS-16V-32-160p
+    cpus: 16
+    ram: 32768
+    disk: 160
+    scs:cpu-type: shared-core
+    scs:disk0-type: ssd
+    scs:name-v1: SCS-16V:32:160
+    scs:name-v2: SCS-16V-32-160
+    hw_rng:allowed: "True"
+    aggregate_instance_extra_specs:local_ssd: "True"
