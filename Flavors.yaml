@@ -263,6 +263,15 @@ mandatory:
     scs:name-v1: SCS-16V:32:100
     scs:name-v2: SCS-16V-32-100
     hw_rng:allowed: "True"
+  - name: SCS-16V-64
+    cpus: 16
+    ram: 65536
+    disk: 0
+    scs:cpu-type: shared-core
+    scs:disk0-type: network
+    scs:name-v1: SCS-16V:64
+    scs:name-v2: SCS-16V-64
+    hw_rng:allowed: "True"
   - name: SCS-32V-32
     cpus: 32
     ram: 32768
