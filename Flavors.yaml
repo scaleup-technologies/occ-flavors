@@ -26,11 +26,11 @@ mandatory:
     ram: 1024
     disk: 5
     scs:cpu-type: crowded-core
-    scs:disk0-type: network
     scs:name-v1: SCS-1L:1:5
     scs:name-v2: SCS-1L-1-5
     hw_rng:allowed: "True"
-    aggregate_instance_extra_specs:local_ssd: "False"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-1V-2
     cpus: 1
     ram: 2048
@@ -46,11 +46,11 @@ mandatory:
     ram: 2048
     disk: 5
     scs:cpu-type: shared-core
-    scs:disk0-type: network
     scs:name-v1: SCS-1V:2:5
     scs:name-v2: SCS-1V-2-5
     hw_rng:allowed: "True"
-    aggregate_instance_extra_specs:local_ssd: "False"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-1V-4
     cpus: 1
     ram: 4096
@@ -86,11 +86,11 @@ mandatory:
     ram: 8192
     disk: 20
     scs:cpu-type: shared-core
-    scs:disk0-type: network
     scs:name-v1: SCS-1V:8:20
     scs:name-v2: SCS-1V-8-20
     hw_rng:allowed: "True"
-    aggregate_instance_extra_specs:local_ssd: "False"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-2V-4
     cpus: 2
     ram: 4096
@@ -126,11 +126,11 @@ mandatory:
     ram: 8192
     disk: 20
     scs:cpu-type: shared-core
-    scs:disk0-type: network
     scs:name-v1: SCS-2V:8:20
     scs:name-v2: SCS-2V-8-20
     hw_rng:allowed: "True"
-    aggregate_instance_extra_specs:local_ssd: "False"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-2V-16
     cpus: 2
     ram: 16384
@@ -146,11 +146,11 @@ mandatory:
     ram: 16384
     disk: 50
     scs:cpu-type: shared-core
-    scs:disk0-type: network
     scs:name-v1: SCS-2V:16:50
     scs:name-v2: SCS-2V-16-50
     hw_rng:allowed: "True"
-    aggregate_instance_extra_specs:local_ssd: "False"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-4V-8
     cpus: 4
     ram: 8192
@@ -166,11 +166,11 @@ mandatory:
     ram: 8192
     disk: 20
     scs:cpu-type: shared-core
-    scs:disk0-type: network
     scs:name-v1: SCS-4V:8:20
     scs:name-v2: SCS-4V-8-20
     hw_rng:allowed: "True"
-    aggregate_instance_extra_specs:local_ssd: "False"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-4V-16
     cpus: 4
     ram: 16384
@@ -205,10 +205,10 @@ mandatory:
     ram: 32768
     disk: 100
     scs:cpu-type: shared-core
-    scs:disk0-type: network
     scs:name-v1: SCS-4V:32:100
     scs:name-v2: SCS-4V-32-100
-    hw_rng:allowed: "True"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-8V-16
     cpus: 8
     ram: 16384
@@ -223,10 +223,11 @@ mandatory:
     ram: 16384
     disk: 50
     scs:cpu-type: shared-core
-    scs:disk0-type: network
     scs:name-v1: SCS-8V:16:50
     scs:name-v2: SCS-8V-16-50
     hw_rng:allowed: "True"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-8V-32
     cpus: 8
     ram: 32768
@@ -241,10 +242,11 @@ mandatory:
     ram: 32768
     disk: 100
     scs:cpu-type: shared-core
-    scs:disk0-type: network
     scs:name-v1: SCS-8V:32:100
     scs:name-v2: SCS-8V-32-100
     hw_rng:allowed: "True"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-16V-32
     cpus: 16
     ram: 32768
@@ -259,10 +261,11 @@ mandatory:
     ram: 32768
     disk: 100
     scs:cpu-type: shared-core
-    scs:disk0-type: network
     scs:name-v1: SCS-16V:32:100
     scs:name-v2: SCS-16V-32-100
     hw_rng:allowed: "True"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-16V-64
     cpus: 16
     ram: 65536
@@ -313,10 +316,11 @@ mandatory:
     ram: 32768
     disk: 100
     scs:cpu-type: shared-core
-    scs:disk0-type: ssd
     scs:name-v1: SCS-8V:32:100s
     scs:name-v2: SCS-8V-32-100s
     hw_rng:allowed: "True"
+    scs:disk0-type: ssd
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-4V-16-100s
     cpus: 4
     ram: 16384
@@ -326,7 +330,7 @@ mandatory:
     scs:name-v1: SCS-4V:16:100s
     scs:name-v2: SCS-4V-16-100s
     hw_rng:allowed: "True"
-  # Local NVME Flavors
+    aggregate_instance_extra_specs:local_ssd: "True"
   - name: SCS-4V-8-20p
     cpus: 4
     ram: 8192
